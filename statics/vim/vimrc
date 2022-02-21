@@ -1,0 +1,3 @@
+source ~/dotvim/lib.vim
+source ~/dotvim/vimrc.vim
+source ~/dotvim/plugin_settings.vim
