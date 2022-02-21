@@ -5,7 +5,7 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shang
 
 COPY statics /idekits/statics
 
-RUN apt update && apt install -y --no-install-recommends tmux g++
+RUN apt update && apt install -y --no-install-recommends tmux git g++
 RUN apt install -y software-properties-common && apt-add-repository -y ppa:jonathonf/vim && apt install -y vim
 RUN mkdir -p ~/.vim/autoload/ && cp /idekits/statics/vim/plug.vim ~/.vim/autoload/
 RUN cd /idekits/statics/tmux && cp tmux.conf ~/.tmux.conf && cp tmux.conf.local ~/.tmux.conf.local
